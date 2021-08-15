@@ -1,1 +1,495 @@
-<html><head><title>Beam by Fincrese Dummy Website</title></head></html><body></body></html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>BEAM by Fincrese</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/css/theme.bootstrap_4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">BEAM</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">OUR PICKS</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead bg-primary text-white text-center">
+        <div style="background-color:#18bc9c;">
+            <p class="flash animated" style="color:rgb(255,255,255);font-family:Bangers, cursive;">EXPERIENCE FINANCIAL FREEDOM IN...</p>
+            <p id="demo"></p>
+        </div>
+        <div class="container">
+            <h1>BEAM by <img src="assets/img/fincrese_long.jpeg" style="width: 400px;"></h1>
+            <hr class="star-light">
+            <h2 class="font-weight-light mb-0">We Illuminate the Path of Financial Freedom for Youth<br></h2>
+        </div>
+    </header>
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-secondary">OUR PICKS</h2>
+            <hr class="star-dark mb-5">
+        </div>
+        <div class="container">
+            <div class="card" id="TableSorterCard">
+                <div class="row table-topper align-items-center">
+                    <div class="col-4 text-left" style="margin: 0px;padding: 5px 15px;"><button class="btn btn-primary btn-sm reset" type="button" style="padding: 5px;margin: 2px;">Reset Filters</button><button class="btn btn-warning btn-sm" id="zoom_in" type="button" zoomclick="ChangeZoomLevel(-10);" style="padding: 5px;margin: 2px;"><i class="fa fa-search-plus"></i></button><button class="btn btn-warning btn-sm" id="zoom_out" type="button" zoomclick="ChangeZoomLevel(-10);" style="padding: 5px;margin: 2px;"><i class="fa fa-search-minus"></i></button></div>
+                    <div class="col-4 text-center" style="margin: 0px;padding: 5px 10px;">
+                        <h6 id="counter">Showing: <strong id="rowCount">ALL</strong>&nbsp;Row(s)</h6>
+                    </div>
+                    <div class="col-4 text-right" style="margin: 0px;padding: 5px 10px;"><a href="#" data-toggle="modal" data-target="#tablehelpModal"><i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="Custom Sort Details" aria-hidden="true" style="padding: 5px 15px;margin: 2px;"></i></a></div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div>
+                            <table class="table table tablesorter" id="ipi-table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>SCRIPT NAME</th>
+                                        <th class="filter-false">AVERAGE ENTRY PRICE</th>
+                                        <th class="filter-false">AVERAGE EXIT PRICE</th>
+                                        <th class="filter-false">PERCENTAGE GAINS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>TITAN</td>
+                                        <td>1435.25</td>
+                                        <td>1835.35</td>
+                                        <td>27.8766</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SUVENPHAR<br></td>
+                                        <td>162.1247111<br></td>
+                                        <td>337.05<br></td>
+                                        <td>107.8955<br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>BHEL<br></td>
+                                        <td>42.05</td>
+                                        <td>54.95</td>
+                                        <td>30.6778</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CHEMFAB<br></td>
+                                        <td>183.4</td>
+                                        <td>220.25</td>
+                                        <td>20.0927</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TBZ<br></td>
+                                        <td>41.16</td>
+                                        <td>48.95</td>
+                                        <td>18.9129</td>
+                                    </tr>
+                                    <tr>
+                                        <td>YESBANK<br></td>
+                                        <td>42.625</td>
+                                        <td>47.51</td>
+                                        <td>14.8292</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TATA STEEL<br></td>
+                                        <td>1100.5</td>
+                                        <td>1444.15</td>
+                                        <td>31.2267</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BURGER KING<br></td>
+                                        <td>162.25</td>
+                                        <td>179.5</td>
+                                        <td>10.6317</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TNPETRO<br></td>
+                                        <td>69.8</td>
+                                        <td>107.75</td>
+                                        <td>54.3696</td>
+                                    </tr>
+                                    <tr>
+                                        <td>WOCKPHARMA<br></td>
+                                        <td>472.9</td>
+                                        <td>587.65</td>
+                                        <td>24.2652</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SUMICHEM<br></td>
+                                        <td>296.8</td>
+                                        <td>359.25</td>
+                                        <td>21.0001</td>
+                                    </tr>
+                                    <tr>
+                                        <td>KOPRAN<br></td>
+                                        <td>127.65</td>
+                                        <td>151.86</td>
+                                        <td>18.9679</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SIYSIL<br></td>
+                                        <td>221.55</td>
+                                        <td>251.8</td>
+                                        <td>13.6538</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CHEMCON<br></td>
+                                        <td>451.95</td>
+                                        <td>504.05</td>
+                                        <td>11.5278</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ADANIPOWER<br></td>
+                                        <td>86.77</td>
+                                        <td>151.75</td>
+                                        <td>74.88</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ARCHIES<br></td>
+                                        <td>14.50</td>
+                                        <td>27.90</td>
+                                        <td>92.4137</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BPCL<br></td>
+                                        <td>421.50</td>
+                                        <td>485.05</td>
+                                        <td>15.077</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DMART<br></td>
+                                        <td>3049.45</td>
+                                        <td>3594.55</td>
+                                        <td>17.88</td>
+                                    </tr>
+                                    <tr>
+                                        <td>HERITGFOOD<br></td>
+                                        <td>335.9</td>
+                                        <td>487.5</td>
+                                        <td>45.13</td>
+                                    </tr>
+                                    <tr>
+                                        <td>HINDPETRO<br></td>
+                                        <td>236.85</td>
+                                        <td>304.55</td>
+                                        <td>28.58</td>
+                                    </tr>
+                                    <tr>
+                                        <td>KIRIINDUS<br></td>
+                                        <td>466.09</td>
+                                        <td>650.65</td>
+                                        <td>39.59</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VIPIND<br></td>
+                                        <td>393.20</td>
+                                        <td>457.60</td>
+                                        <td>16.38</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" role="dialog" tabindex="-1" id="tablehelpModal" aria-labeledby="tablehelpModal" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Table Filtering Options</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th style="width:1%">Priority</th>
+                                                <th style="width:9%">Operator</th>
+                                                <th style="width:30%">Description</th>
+                                                <th style="width:60%">Examples</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><code>|</code>&nbsp;or&nbsp;&nbsp;<code>OR</code><br></td>
+                                                <td>Logical "or" (Vertical bar). Filter the column for content that matches text from either side of the bar.<br></td>
+                                                <td><code>&lt;20 | &gt;40</code>&nbsp;(matches a column cell with either "&lt;20" or "&gt;40")<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><code>&amp;&amp;</code>&nbsp;or <code>AND</code><br></td>
+                                                <td>Logical "and". Filter the column for content that matches text from either side of the operator.<br></td>
+                                                <td><code>&gt;20 &amp;&amp; &gt;40</code>&nbsp;(matches a column cell that contains both "&gt;20" and "&lt;40")<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><code>/\d/</code><br></td>
+                                                <td>Add any regex to the query to use in the query ("mig" flags can be included&nbsp;<code>/\w/mig</code>)<br></td>
+                                                <td><code>/b[aeiou]g/i</code>&nbsp;(finds "bag", "beg", "BIG", "Bug", etc);<code>&gt;/r$/</code>&nbsp;(matches text that ends with an "r")<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td><code>&lt; &lt;= &gt;= &gt;</code><br></td>
+                                                <td>Find alphabetical or numerical values less than or greater than or equal to the filtered query .<br></td>
+                                                <td><code>&lt;=10</code>&nbsp;(find values greater than or equal to 10)<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td><code>!</code>&nbsp;or&nbsp;<code>!=</code><br></td>
+                                                <td>Not operator, or not exactly match. Filter the column with content that&nbsp;<strong>do not</strong>&nbsp;match the query. Include an equal (<code>=</code>), single (<code>'</code>) or double quote (<code>"</code>) to exactly&nbsp;<em>not</em>&nbsp;match a filter.<br><br><br></td>
+                                                <td><code>!e</code>&nbsp;(find text that doesn't contain an "e");<code>!"ELISA"</code>&nbsp;(find content that does not exactly match "ELISA")<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td><code>"</code>&nbsp;or&nbsp;<code>=</code><br></td>
+                                                <td>To exactly match the search query, add a quote, apostrophe or equal sign to the beginning and/or end of the query<br></td>
+                                                <td><code>abc"</code>&nbsp;or&nbsp;<code>abc=</code>&nbsp;(exactly match "abc")<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td><code>-</code>&nbsp;or <code>to</code><br></td>
+                                                <td>Find a range of values. Make sure there is a space before and after the dash (or the word "to").<br></td>
+                                                <td><code>10 - 30</code>&nbsp;or&nbsp;<code>10 to 30</code>&nbsp;(match values between 10 and 30)<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td><code>?</code><br></td>
+                                                <td>Wildcard for a single, non-space character.<br></td>
+                                                <td><code>S?c</code>&nbsp;(finds "Sec" and "Soc", but not "Seec")<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td><code>*</code><br></td>
+                                                <td>Wildcard for zero or more non-space characters.<br></td>
+                                                <td><code>B*k</code>&nbsp;(matches "Black" and "Book")<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td><code>~</code><br></td>
+                                                <td>Perform a fuzzy search (matches sequential characters) by adding a tilde to the beginning of the query<br></td>
+                                                <td><code>~bee</code>&nbsp;(matches "Bruce Lee" and "Brenda Dexter"), or&nbsp;<code>~piano</code>&nbsp;(matches "Philip Aaron Wong")<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>text<br></td>
+                                                <td>Any text entered in the filter will&nbsp;<strong>match</strong>&nbsp;text found within the column<br></td>
+                                                <td><code>abc</code>&nbsp;(finds "abc", "abcd", "abcde", etc);<code>SEC</code>&nbsp;(finds "SEC" and "Analytical SEC")<br></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer"><button class="btn btn-danger" type="button" data-dismiss="modal">Close</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="bg-primary text-white mb-0">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-white">About US</h2>
+            <hr class="star-light mb-5">
+            <div class="row">
+                <div class="col-lg-4 ml-auto">
+                    <p class="lead">BEAM by Fincrese offers financial services for students to help them build a solid foundation for financial exploration.<br>BEAM is forged with the purpose of illuminating the path of financial freedom for the youth of India. Fincrese is fascinated by the rupee coin. It is small, but almighty. It is abundant, yet priceless. It is light but also weighs down the pocket of a fellow who is financially insecure. BEAM is here to lighten the burden of the coin and transform it into happiness, warmth, fulfillment, and contentment in the long run.<br><br></p>
+                </div>
+                <div class="col-lg-4 mr-auto">
+                    <p class="lead">We at BEAM believe in and wholeheartedly embody the “One for All” soulset. We believe that the power to transform one’s financial future lies in their hands; BEAM is here to help you harness and provide a stable financial future. We envision a world where the youth are freed from the shackles of financial insecurity.<br>We respect and are mindful about the various inhibitions that a student might face. Keeping those in mind, we designed our services that cater to the specific needs of a student to help them reach a higher indifference curve.<br><br><br></p>
+                </div>
+            </div>
+            <div class="text-center mt-4"><a class="btn btn-outline-light btn-xl" role="button" href="#"><i class="fa fa-download mr-2"></i><span>Download Brochure</span></a></div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-secondary mb-0">Contact US</h2>
+            <hr class="star-dark mb-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form id="contactForm" name="sentMessage" novalidate="novalidate" action="https://formspree.io/f/xeqvpapo" method="POST">
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Name</label><input class="form-control" type="text" id="name" required="" placeholder="Name"><small class="form-text text-danger help-block"></small></div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Email Address</label><input class="form-control" type="email" id="email" required="" placeholder="Email Address"><small class="form-text text-danger help-block"></small></div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Phone Number</label><input class="form-control" type="tel" id="phone" required="" placeholder="Phone Number"><small class="form-text text-danger help-block"></small></div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-5 pb-2"><textarea class="form-control" id="message" required="" placeholder="Message" rows="5"></textarea><small class="form-text text-danger help-block"></small></div>
+                        </div>
+                        <div id="success"></div>
+                        <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p></p><span>Rayaji Nagar, Motibag<br>Junagadh, Gujarat 362001<br></span>
+                </div>
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase">Around the Web</h4>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-instagram fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-twitter fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="#"><i class="fa fa-dribbble fa-fw"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="text-uppercase mb-4">OUR OFFERINGS</h4>
+                    <p class="lead mb-0"><span>Launching Soon.&nbsp;<br>Stay Tuned!<br></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright © Fincrese 2021</small></div>
+    </div>
+    <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="d-block js-scroll-trigger text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/cabin.png">
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-2">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/cake.png">
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-3">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/circus.png">
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-4">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/game.png">
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-5">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/safe.png">
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-6">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/submarine.png">
+                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-filter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-storage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
